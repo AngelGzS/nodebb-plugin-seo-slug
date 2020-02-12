@@ -1,0 +1,26 @@
+{
+  "url": "https://github.com/AngelGzS/nodebb-plugin-seo-slug",
+  "library": "./plugin.js",
+  "hooks": [
+    {
+      "hook": "filter:topic.create",
+      "method": "createTopic"
+    },
+    {
+      "hook": "filter:topic.edit",
+      "method": "editTopic"
+    },
+    {
+      "hook": "filter:category.create",
+      "method": "categoryCreate"
+    },
+    {
+      "hook": "filter:category.update",
+      "method": "categoryUpdate"
+    },
+    {
+      "hook": "filter:user.create",
+      "method": "userCreate"
+    }
+  ]
+}

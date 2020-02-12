@@ -1,0 +1,27 @@
+{
+  "name": "nodebb-plugin-seo-slug",
+  "version": "0.0.1",
+  "description": "Slugify nodebb's slug of topic category, post and user to make them seo friendly.",
+  "main": "plugin.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AngelGzS/nodebb-plugin-seo-slug"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "slugify",
+    "seo",
+    "friendly",
+    "slug"
+  ],
+  "author": {
+    "name": "Angel Gonzalez",
+    "email": "angelbroz@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "nbbpm": {
+    "compatibility": "^v1.13.2"
+  }
+}
