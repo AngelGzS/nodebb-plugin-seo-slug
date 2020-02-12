@@ -1,2 +1,3 @@
-# nodebb-plugin-seo-slug
-WIP: Slugify nodebb's slug of topic and category to make them more seo friendly.
+# WIP: nodebb-plugin-seo-slug
+
+Slugify nodebb's slug of topic and category to make them seo friendly.
