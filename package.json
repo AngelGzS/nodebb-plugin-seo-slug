@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-seo-slug",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Slugify nodebb's slug of topic category, post and user to make them seo friendly.",
   "main": "plugin.js",
   "repository": {

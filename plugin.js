@@ -8,19 +8,22 @@ var options =
     };
 
 function slugify (text) {
+	const ntopic = text.indexOf("/");
+	const topicid = text.substring(0,ntopic);
+	var slug = text.substring(ntopic+1).toLowerCase();
 
-    var slug = text.toLowerCase();
- 
-    slug = slug.normalize("NFD").replace(/[\u0300-\u036f]/g, "") 
-    slug = slug.replace(/\s+/g, ' '); 
-    slug = slug.replace(/[^a-zA-Z0-9\- ]/g, "");
-    slug = slug.substring(0,options.truncate); 
-    slug = slug.trim(); 
-    slug = slug.replace(/ /gi, '-');
-    slug = slug.replace(/\-+/g, '-'); 
-    slug = slug.trim("-"); 
+	console.log(slug, ntopic);
+	slug = slug.normalize("NFD").replace(/[\u0300-\u036f]/g, "") 
+	slug = slug.replace(/\s+/g, ' '); 
+	slug = slug.replace(/[^a-zA-Z0-9\- ]/g, "");
+	slug = slug.trim(); 
+	slug = slug.replace(/ /gi, '-');
+	slug = slug.replace(/\-+/g, '-'); 
+	slug = slug.trim("-");
+	slug = topicid + "/" + slug;
+	slug = slug.substring(0,options.truncate);
 
-    return slug;
+	return slug;
 }
 
 plugin.createTopic = function (data, callback) {
