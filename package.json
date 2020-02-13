@@ -22,6 +22,6 @@
   "license": "MIT",
   "dependencies": {},
   "nbbpm": {
-    "compatibility": "^v1.13.2"
+    "compatibility": "^v1.0.0"
   }
 }
